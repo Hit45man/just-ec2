@@ -10,7 +10,7 @@ resource "aws_instance" "my-ec2" {
   instance_type     = "t2.micro"
   availability_zone = "ap-south-1a"
 
-  tags {
+  tags = {
     Name = "My Jenkins Terraform server" 
   }
  
